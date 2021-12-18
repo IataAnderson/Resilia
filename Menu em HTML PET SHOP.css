@@ -2,21 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
 
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(125, 231, 231);
+}
+#menu {
+    border: 2px solid rgb(41, 175, 238);
+    
+    
+}
 #menu ul {
 display: flex;
 margin: 0;
-background-color: rgb(183, 202, 8);
+background-color: rgb(217, 230, 103);
 list-style: none;
 font-size: 150%;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-color: blue;
+
 
 }
 
 #menu ul li {
 display: inline;
+flex-direction: row;
+
 }
 
 #menu ul li a {
@@ -24,14 +35,92 @@ padding: 25px 100px;
 display: inline-block;
 color: white;
 text-decoration: none;
-border: 1px solid black;
+font-weight: bold;
+margin-left: 30px;
+
 
 }
 .child {
-    background-color: rgb(204, 118, 19);
+    background-color: rgb(226, 109, 109);
     font-size: 100%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    width: 100%;
+    height: 80px;
+    
 }
 #menu ul li a:hover {
-color:rgb(0, 3, 3);
+color:rgb(83, 31, 1);
+font-size: 200;
+}
+.child:hover {
+font-size: 120%;
+}
+
+.cachorros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3%;
+   
+
+}
+.cachorros img {
+    width: 260px;
+    height: 360px;
+    border-radius: 300px;
+    margin: 5px;
+    border: 3px solid rgb(146, 146, 243);
+
+
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(217, 230, 103);
+    height: 67px;
+    margin-top: 5%;
+    border: 2px solid rgb(71, 199, 221);
+
+        
+}
+.rodape {
+    text-align: center;
+    color: rgb(63, 60, 56);
+    font-size: 20px;
+    font-family: OCR A Std, monospace;
+    font-weight: bold
+}
+a {
+    display: flex; 
+    margin-left: 50px;
+    text-decoration: none;
+    
+}
+@media (max-width: 650px) {
+
+.child {
+    display: none;
+}
+ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -25px;
+}
 }
 
